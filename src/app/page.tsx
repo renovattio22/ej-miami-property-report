@@ -14,8 +14,8 @@ export default function Home() {
   return (
     <main>
       <StickyHeader />
-      <WaveSeparator topColor="var(--navy)" fillColor="var(--white)" />
       <HeroKpiStrip />
+      <WaveSeparator topColor="var(--navy-mid)" fillColor="var(--off-white)" />
       <AnalyticsSection />
       <NavyStatStrip stats={navyStripStats} />
       <AiInsights />
@@ -23,7 +23,7 @@ export default function Home() {
       <InvestorAnalytics />
       <NavyStatStrip stats={navyStrip2Stats} />
       <PortfolioTable />
-      <WaveSeparator topColor="var(--off-white)" fillColor="var(--navy)" flip />
+      <WaveSeparator topColor="var(--off-white)" fillColor="var(--navy-deep)" flip />
       <Footer />
     </main>
   );

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Oswald, Afacad } from "next/font/google";
+import { Oswald, Inter } from "next/font/google";
 import "./globals.css";
 
 const oswald = Oswald({
@@ -9,10 +9,10 @@ const oswald = Oswald({
   display: "swap",
 });
 
-const afacad = Afacad({
+const inter = Inter({
   variable: "--font-afacad",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -35,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${oswald.variable} ${afacad.variable} antialiased`}>
+      <body className={`${oswald.variable} ${inter.variable} antialiased`}>
         {children}
       </body>
     </html>

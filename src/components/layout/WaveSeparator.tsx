@@ -19,25 +19,38 @@ export default function WaveSeparator({
     target: ref,
     offset: ["start end", "end start"],
   });
-  const y = useTransform(scrollYProgress, [0, 1], [-8, 8]);
+  const y1 = useTransform(scrollYProgress, [0, 1], [-10, 10]);
+  const y2 = useTransform(scrollYProgress, [0, 1], [-4, 14]);
 
-  const path = flip
-    ? "M0,40 C360,0 720,80 1080,40 C1260,20 1380,30 1440,40 L1440,80 L0,80 Z"
-    : "M0,40 C360,80 720,0 1080,40 C1260,60 1380,50 1440,40 L1440,80 L0,80 Z";
+  const path1 = flip
+    ? "M0,50 C360,10 720,90 1080,50 C1260,30 1380,40 1440,50 L1440,120 L0,120 Z"
+    : "M0,50 C360,90 720,10 1080,50 C1260,70 1380,60 1440,50 L1440,120 L0,120 Z";
+
+  const path2 = flip
+    ? "M0,60 C400,20 800,100 1200,55 C1320,40 1400,50 1440,60 L1440,120 L0,120 Z"
+    : "M0,60 C400,100 800,20 1200,55 C1320,75 1400,65 1440,60 L1440,120 L0,120 Z";
 
   return (
     <div
       ref={ref}
-      className="w-full h-[80px] relative overflow-hidden"
+      className="w-full h-[120px] relative overflow-hidden"
       style={{ background: topColor }}
     >
       <motion.svg
-        viewBox="0 0 1440 80"
+        viewBox="0 0 1440 120"
         preserveAspectRatio="none"
-        className="absolute bottom-0 w-full h-[80px]"
-        style={{ y }}
+        className="absolute bottom-0 w-full h-[120px]"
+        style={{ y: y2, willChange: "transform" }}
       >
-        <path d={path} fill={fillColor} />
+        <path d={path2} fill={fillColor} opacity={0.4} />
+      </motion.svg>
+      <motion.svg
+        viewBox="0 0 1440 120"
+        preserveAspectRatio="none"
+        className="absolute bottom-0 w-full h-[120px]"
+        style={{ y: y1, willChange: "transform" }}
+      >
+        <path d={path1} fill={fillColor} />
       </motion.svg>
     </div>
   );

@@ -33,7 +33,7 @@ export default function AnimatedCounter({ value, className = "" }: AnimatedCount
     }
 
     const controls = animate(0, parsed.number, {
-      duration: 1.8,
+      duration: 1.4,
       ease: [0.25, 0.46, 0.45, 0.94],
       onUpdate: (latest) => {
         if (parsed.hasDecimal) {
@@ -55,7 +55,7 @@ export default function AnimatedCounter({ value, className = "" }: AnimatedCount
   return (
     <motion.span
       ref={ref}
-      className={className}
+      className={`tabular-nums ${className}`}
       initial={{ opacity: 0 }}
       animate={isInView ? { opacity: 1 } : {}}
       transition={{ duration: 0.3 }}
