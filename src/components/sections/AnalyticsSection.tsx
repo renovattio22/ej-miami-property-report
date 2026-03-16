@@ -65,6 +65,22 @@ export default function AnalyticsSection() {
             </div>
           </RevealOnScroll>
         </div>
+
+        {/* Premium CTA */}
+        <RevealOnScroll delay={0.3} className="mt-8 text-center">
+          <a
+            href="https://agency.lujo.ai"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2.5 border border-[var(--navy)]/20 text-[var(--navy)] px-6 py-3 rounded-lg text-[13px] font-medium tracking-[0.5px] hover:border-[var(--gold)] hover:text-[var(--gold)] transition-all duration-300 group"
+          >
+            <svg className="w-3.5 h-3.5 opacity-50 group-hover:opacity-80 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+            Download Full Market Report
+            <span className="bg-[var(--gold)]/10 text-[var(--gold-dark)] text-[9px] font-bold tracking-[1px] uppercase px-2 py-0.5 rounded">Premium</span>
+          </a>
+        </RevealOnScroll>
       </div>
     </section>
   );

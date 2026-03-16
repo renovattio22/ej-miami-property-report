@@ -18,6 +18,10 @@ export default function Footer() {
             EJMIAMI.COM
           </div>
 
+          <p className="text-[12px] text-white/30 uppercase tracking-[2px] mt-6 mb-2 font-medium">
+            This is a demo report
+          </p>
+
           <motion.a
             href="https://agency.lujo.ai"
             target="_blank"
@@ -45,9 +49,14 @@ export default function Footer() {
 
           <hr className="border-t border-[var(--gold)]/15 max-w-[200px] mx-auto mt-10 mb-4" />
 
-          <div className="text-[10px] text-white/25 tracking-[1.5px] uppercase">
+          <a
+            href="https://agency.lujo.ai"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block text-[11px] text-white/35 tracking-[1.5px] uppercase hover:text-[var(--gold)] transition-colors"
+          >
             Powered by Lujo AI Agency &middot; agency.lujo.ai
-          </div>
+          </a>
         </div>
       </RevealOnScroll>
     </footer>

@@ -52,11 +52,18 @@ export default function StickyHeader() {
           ))}
         </nav>
 
-        <div className="hidden lg:block">
-          <div className="bg-white/[0.06] text-white/80 px-5 py-2 rounded-md text-[11px] font-medium tracking-[2px] uppercase border-l-2 border-[var(--gold)] border-r-0 border-t-0 border-b-0"
+        <div className="flex items-center gap-3">
+          {/* Mobile demo badge */}
+          <span className="lg:hidden bg-[var(--gold)]/20 text-[var(--gold)] text-[9px] font-bold tracking-[1.5px] uppercase px-2.5 py-1 rounded-md border border-[var(--gold)]/30">
+            Demo
+          </span>
+
+          {/* Desktop badge */}
+          <div className="hidden lg:flex items-center gap-2.5 bg-white/[0.06] text-white/80 px-5 py-2 rounded-md text-[11px] font-medium tracking-[2px] uppercase border-l-2 border-[var(--gold)]"
             style={{ borderRight: '1px solid rgba(255,255,255,0.06)', borderTop: '1px solid rgba(255,255,255,0.06)', borderBottom: '1px solid rgba(255,255,255,0.06)' }}
           >
-            Property Intelligence Report
+            <span className="inline-block w-1.5 h-1.5 rounded-full bg-[var(--gold)] animate-pulse" />
+            Demo — Property Intelligence Report
           </div>
         </div>
 

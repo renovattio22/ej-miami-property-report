@@ -8,12 +8,14 @@ import AiInsights from "@/components/sections/AiInsights";
 import LocationIntelligence from "@/components/sections/LocationIntelligence";
 import InvestorAnalytics from "@/components/sections/InvestorAnalytics";
 import PortfolioTable from "@/components/sections/PortfolioTable";
+import FloatingDemoBanner from "@/components/ui/FloatingDemoBanner";
 import { navyStripStats, navyStrip2Stats } from "@/data/computed";
 
 export default function Home() {
   return (
     <main>
       <StickyHeader />
+      <FloatingDemoBanner />
       <HeroKpiStrip />
       <WaveSeparator topColor="var(--navy-mid)" fillColor="var(--off-white)" />
       <AnalyticsSection />

@@ -17,13 +17,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "EJ Miami — Property Intelligence Report",
+  title: "EJ Miami — Property Intelligence Report (Demo)",
   description:
-    "AI-powered property intelligence report for Eric Johnson, EJMIAMI.COM. 54 active listings across Brickell, The Roads, and surrounding Miami neighborhoods.",
+    "AI-powered property intelligence report for Eric Johnson, EJMIAMI.COM. 54 active listings across Brickell, The Roads, and surrounding Miami neighborhoods. Powered by Lujo AI.",
   openGraph: {
-    title: "EJ Miami — Property Intelligence Report",
+    title: "EJ Miami — Property Intelligence Report (Demo)",
     description:
-      "AI-powered property intelligence report with market analytics, investment analysis, and neighborhood scores.",
+      "AI-powered property intelligence report with market analytics, investment analysis, and neighborhood scores. Powered by Lujo AI.",
     type: "website",
   },
 };

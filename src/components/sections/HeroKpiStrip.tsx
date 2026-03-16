@@ -30,6 +30,15 @@ export default function HeroKpiStrip() {
           <p className="text-white/40 text-[13px] md:text-[14px] tracking-[3px] uppercase mt-3 font-medium">
             54 Active Properties &nbsp;|&nbsp; Brickell, The Roads &amp; Surrounding
           </p>
+          <a
+            href="https://agency.lujo.ai"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 mt-5 bg-white/[0.06] backdrop-blur-sm border border-white/[0.1] rounded-full px-4 py-1.5 text-[10px] text-white/50 tracking-[1.5px] uppercase hover:border-[var(--gold)]/30 hover:text-white/70 transition-all duration-300"
+          >
+            <span className="w-1 h-1 rounded-full bg-[var(--gold)]" />
+            Powered by Lujo AI
+          </a>
         </motion.div>
 
         {/* KPI Grid */}

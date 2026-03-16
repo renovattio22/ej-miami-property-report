@@ -181,6 +181,38 @@ export default function InvestorAnalytics() {
               </div>
             </RevealOnScroll>
           </div>
+
+          {/* ROI Calculator CTA */}
+          <a
+            href="https://agency.lujo.ai"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block glass-card p-6 md:p-7 mt-6 relative z-10 text-center no-underline group hover:border-[var(--gold)]/30 transition-colors duration-300"
+          >
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-[var(--gold)]/15 flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5 text-[var(--gold)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V13.5zm0 2.25h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V18zm2.498-6.75h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V13.5zm0 2.25h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V18zm2.504-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zm0 2.25h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V18zm2.498-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zM8.25 6h7.5v2.25h-7.5V6zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 002.25 2.25h10.5a2.25 2.25 0 002.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0012 2.25z" />
+                  </svg>
+                </div>
+                <div className="text-left">
+                  <div className="font-heading text-[14px] font-medium uppercase tracking-[1px] text-white">
+                    Interactive ROI Calculator
+                  </div>
+                  <p className="text-[12px] text-white/40 mt-0.5">
+                    Model cash-on-cash returns, cap rates &amp; 5-year projections
+                  </p>
+                </div>
+              </div>
+              <span className="inline-flex items-center gap-1.5 text-[var(--gold)] text-[13px] font-medium tracking-[0.5px] group-hover:gap-2.5 transition-all whitespace-nowrap">
+                Get Access
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </span>
+            </div>
+          </a>
         </div>
       </div>
     </section>

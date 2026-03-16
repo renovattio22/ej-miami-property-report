@@ -220,6 +220,32 @@ export default function PortfolioTable() {
               onChange={(e) => setGlobalFilter(e.target.value)}
               className="bg-white border border-[var(--border)] text-[var(--text)] px-4 py-3 sm:py-2.5 rounded-md font-body text-[13px] outline-none w-full sm:w-[280px] transition-[border-color] focus:border-[var(--navy)] placeholder:text-[var(--text-dim)]"
             />
+
+            {/* Premium action buttons */}
+            <div className="flex gap-2 sm:ml-auto">
+              <a
+                href="https://agency.lujo.ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 border border-[var(--border)] text-[var(--text-dim)] px-4 py-3 sm:py-2.5 rounded-md text-[12px] font-medium tracking-[0.5px] uppercase hover:border-[var(--gold)] hover:text-[var(--gold)] transition-all duration-300 flex-1 sm:flex-none justify-center"
+              >
+                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+                Export CSV
+              </a>
+              <a
+                href="https://agency.lujo.ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 border border-[var(--border)] text-[var(--text-dim)] px-4 py-3 sm:py-2.5 rounded-md text-[12px] font-medium tracking-[0.5px] uppercase hover:border-[var(--gold)] hover:text-[var(--gold)] transition-all duration-300 flex-1 sm:flex-none justify-center"
+              >
+                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                </svg>
+                Price Alerts
+              </a>
+            </div>
           </div>
 
           {/* Table */}
@@ -270,8 +296,21 @@ export default function PortfolioTable() {
             </table>
           </div>
 
-          <div className="mt-4 text-[12px] text-[var(--text-dim)] font-medium">
-            Showing {table.getRowModel().rows.length} of {listings.length} listings
+          <div className="mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+            <div className="text-[12px] text-[var(--text-dim)] font-medium">
+              Showing {table.getRowModel().rows.length} of {listings.length} listings
+            </div>
+            <a
+              href="https://agency.lujo.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-[12px] text-[var(--text-dim)] hover:text-[var(--gold)] transition-colors font-medium"
+            >
+              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182" />
+              </svg>
+              This report updates automatically. Get weekly delivery &rarr;
+            </a>
           </div>
         </RevealOnScroll>
       </div>

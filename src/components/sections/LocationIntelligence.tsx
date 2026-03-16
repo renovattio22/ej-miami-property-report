@@ -55,6 +55,24 @@ export default function LocationIntelligence() {
             </motion.div>
           ))}
         </StaggerChildren>
+
+        {/* Deep Dive CTA */}
+        <div className="mt-8 text-center bg-[var(--off-white)] rounded-xl p-6 md:p-8">
+          <p className="text-[var(--text-muted)] text-[14px] mb-4">
+            Want detailed school ratings, crime data &amp; walkability reports?
+          </p>
+          <a
+            href="https://agency.lujo.ai"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-[var(--navy)] text-white px-6 py-3 rounded-lg text-[13px] font-medium tracking-[0.5px] hover:bg-[var(--navy-mid)] transition-colors duration-300"
+          >
+            <svg className="w-3.5 h-3.5 opacity-70" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+            </svg>
+            Unlock Neighborhood Deep Dive &rarr;
+          </a>
+        </div>
       </div>
     </section>
   );
