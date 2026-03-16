@@ -1,26 +1,112 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --navy: #192E5A;
+  --navy-light: rgba(25,46,90,0.77);
+  --navy-dark: #111d38;
+  --gold: #B8923E;
+  --gold-light: #d4ad5a;
+  --gold-pale: #f5ecd8;
+  --white: #ffffff;
+  --off-white: #f7f7f7;
+  --light-gray: #f0f0f0;
+  --mid-gray: #dedede;
+  --text: #252525;
+  --text-muted: #515151;
+  --text-light: #858585;
+  --text-dim: #999999;
+  --green: #1a8a4a;
+  --red: #c0392b;
+  --blue: #2c6fbb;
+  --border: #e8e8e8;
+  --border-light: #f0f0f0;
+  --shadow: 0 2px 20px rgba(0,0,0,0.06);
+  --shadow-hover: 0 8px 30px rgba(0,0,0,0.1);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--white);
+  --color-foreground: var(--text);
+  --font-heading: var(--font-oswald);
+  --font-body: var(--font-afacad);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), system-ui, sans-serif;
+  background: var(--white);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: var(--navy);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--gold);
+}
+
+/* Section Labels */
+.section-label {
+  font-family: var(--font-body), sans-serif;
+  font-size: 18px;
+  letter-spacing: 5.5px;
+  text-transform: uppercase;
+  color: var(--text-light);
+  font-weight: 400;
+  text-align: center;
+}
+
+.section-title {
+  font-family: var(--font-heading), sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--text);
+  text-align: center;
+  margin-top: 4px;
+}
+
+/* Responsive section title */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 32px;
+  }
+  .section-label {
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-gray);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--mid-gray);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--navy);
 }
